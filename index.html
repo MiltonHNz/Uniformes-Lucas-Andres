@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniformes Lucas Andres</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Uniformes Lucas Andres</h1>
-        <button class="contact-btn" onclick="openContact()">Contacto</button>
+        <div class="menu-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <div class="menu" id="menu">
+                <a href="#">Contacto</a>
+                <a href="formulario.html">Formulario</a>
+            </div>
+        </div>
+        
+
+        
+        
     </header>
+
+ 
 
     <div class="navbar">
         <button onclick="navigateTo('mujeres')">Ropa de Mujeres</button>

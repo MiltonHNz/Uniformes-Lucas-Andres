@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #0a0a23, #1a1a3d);
@@ -7,14 +8,17 @@ body {
     color: white;
 }
 
+/* Encabezado */
 header {
     background: #0f3460;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     position: relative;
+    width: 100%;
 }
 
+/* Título */
 h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -22,6 +26,7 @@ h1 {
     display: inline-block;
 }
 
+/* Botón de contacto */
 .contact-btn {
     position: absolute;
     top: 20px;
@@ -39,13 +44,16 @@ h1 {
     background-color: #0056b3;
 }
 
+/* Navegación */
 .navbar {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin: 30px 0;
+    flex-wrap: wrap;
 }
 
+/* Botones */
 button {
     padding: 10px 20px;
     border: none;
@@ -57,27 +65,45 @@ button {
     font-size: 1rem;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para el botón "Volver" */
+/* Botón volver */
 .back-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    background-color: transparent; /* Fondo transparente */
-    color: white; /* Texto blanco */
-    text-decoration: none;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
     font-size: 1rem;
-    font-weight: bold;
-    border: 2px solid white; /* Borde blanco */
-    border-radius: 5px;
-    transition: 0.3s;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.back-btn:hover {
-    background-color: white;
-    color: black; /* Cambio de color al pasar el cursor */
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .back-btn {
+        font-size: 0.9rem;
+        top: 10px;
+        right: 10px;
+    }
 }

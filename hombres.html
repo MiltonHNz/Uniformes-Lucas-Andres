@@ -9,10 +9,9 @@
 </head>
 <body>
     <header>
-        <h1>Hombres</h1>
+        <h1>Categoría</h1>
         <a href="index.html" class="back-btn">Volver</a>
     </header>
-    
 
     <!-- Mensaje emergente -->
     <div class="popup" id="popup">
@@ -21,4 +20,15 @@
             <p class="popup-text">¡Algo nuevo está por llegar!<br>Estamos a punto de lanzar nuestra página web. <br>Muy pronto podrás disfrutar de uniformes deportivos de alta calidad y contenido exclusivo.<br>¡Gracias por tu paciencia, te sorprenderemos con lo que estamos preparando!</p>
         </div>
     </div>
-    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("popup").style.display = "flex";
+        });
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>

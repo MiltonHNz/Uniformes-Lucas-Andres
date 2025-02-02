@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0a0a23, #1a1a3d);
+    background: linear-gradient(to bottom, #9999c5, #060836);
     text-align: center;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 header {
-    background: #0f3460;
+    background: #0b213d;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
